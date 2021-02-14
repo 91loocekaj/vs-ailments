@@ -1,0 +1,207 @@
+{
+	code: "weaponaugment",
+	variantgroups: [
+  { code: "type", states: ["sharp", "weight", "hard"]},
+	{ code: "subtype", states: ["1", "2", "3"]}
+],
+	attributesByType: {
+		"*-sharp-1" : {
+			augmentTime : 100,
+			augmentName : "sharp1",
+			attackInjuries : [
+				{
+			    "name" : "laceration",
+			    "type" : "injury",
+			    "chance" : 0.1,
+			    "level" : 1,
+			    "duration" : 1,
+			    "effects": [{"name": "health-", "level" : 1, "start": 0, "end" : 24}, {"name": "bleed", "level" : 1, "start": 0, "end" : 24}],
+			    "nextCond" : {
+			      "name" : "infectedwound",
+			      "type" : "bacterial",
+			      "level" : 1,
+			      "duration" : 1,
+			      "effects" : [{"name": "health-", "level" : 1, "start": 0, "end" : 72}, {"name": "poison", "level" : 1, "start": 0, "end" : 72}]
+			    }
+			  }
+			]
+		},
+		"*-sharp-2" : {
+			augmentTime : 200,
+			augmentName : "sharp2",
+			attackInjuries : [
+				{
+			    "name" : "laceration",
+			    "type" : "injury",
+			    "chance" : 0.2,
+			    "level" : 1,
+			    "duration" : 1,
+			    "effects": [{"name": "health-", "level" : 1, "start": 0, "end" : 24}, {"name": "bleed", "level" : 1, "start": 0, "end" : 24}],
+			    "nextCond" : {
+			      "name" : "infectedwound",
+			      "type" : "bacterial",
+			      "level" : 1,
+			      "duration" : 1,
+			      "effects" : [{"name": "health-", "level" : 1, "start": 0, "end" : 72}, {"name": "poison", "level" : 1, "start": 0, "end" : 72}]
+			    }
+			  }
+			]
+		},
+		"*-sharp-3" : {
+			augmentTime : 400,
+			augmentName : "sharp3",
+			attackInjuries : [
+				{
+			    "name" : "laceration",
+			    "type" : "injury",
+			    "chance" : 0.3,
+			    "level" : 1,
+			    "duration" : 1,
+			    "effects": [{"name": "health-", "level" : 1, "start": 0, "end" : 24}, {"name": "bleed", "level" : 1, "start": 0, "end" : 24}],
+			    "nextCond" : {
+			      "name" : "infectedwound",
+			      "type" : "bacterial",
+			      "level" : 1,
+			      "duration" : 1,
+			      "effects" : [{"name": "health-", "level" : 1, "start": 0, "end" : 72}, {"name": "poison", "level" : 1, "start": 0, "end" : 72}]
+			    }
+			  }
+			]
+		},
+		"*-weight-1" : {
+			augmentTime : 100,
+			augmentName : "weight1",
+			attackInjuries : [
+				{
+			    "name" : "fracture",
+			    "level" : 1,
+			    "duration" : 1,
+			    "chance" : 0.1,
+			    "type" : "injury",
+			    "effects" : [{"name": "speed-", "level" : 1, "start" : 0, "end" : 96}]
+			  }
+			]
+		},
+		"*-weight-2" : {
+			augmentTime : 200,
+			augmentName : "weight2",
+			attackInjuries : [
+				{
+			    "name" : "fracture",
+			    "level" : 1,
+			    "duration" : 1,
+			    "chance" : 0.2,
+			    "type" : "injury",
+			    "effects" : [{"name": "speed-", "level" : 1, "start" : 0, "end" : 96}]
+			  }
+			]
+		},
+		"*-weight-3" : {
+			augmentTime : 400,
+			augmentName : "weight3",
+			attackInjuries : [
+				{
+			    "name" : "fracture",
+			    "level" : 1,
+			    "duration" : 1,
+			    "chance" : 0.3,
+			    "type" : "injury",
+			    "effects" : [{"name": "speed-", "level" : 1, "start" : 0, "end" : 96}]
+			  }
+			]
+		},
+		"*-hard-1" : {
+			augmentTime : 100,
+			augmentName : "hard1",
+			attackInjuries : [
+				{
+			    "name" : "abrasion",
+			    "level" : 1,
+			    "duration" : 1,
+			    "chance" : 0.1,
+			    "type" : "injury",
+			    "effects" : [{"name": "defense-", "level" : 1, "start" : 0, "end" : 24}],
+			    "nextCond" : {
+			      "name" : "infectedwound",
+			      "type" : "bacterial",
+			      "level" : 1,
+			      "duration" :1,
+			      "effects" : [{"name": "health-", "level" : 1, "start": 0, "end" : 72}, {"name": "poison", "level" : 1, "start": 0, "end" : 72}]
+			    },
+			    "nextCondChance" : 0.1
+			  }
+			]
+		},
+		"*-hard-2" : {
+			augmentTime : 200,
+			augmentName : "hard2",
+			attackInjuries : [
+				{
+			    "name" : "abrasion",
+			    "level" : 1,
+			    "duration" : 1,
+			    "chance" : 0.2,
+			    "type" : "injury",
+			    "effects" : [{"name": "defense-", "level" : 1, "start" : 0, "end" : 24}],
+			    "nextCond" : {
+			      "name" : "infectedwound",
+			      "type" : "bacterial",
+			      "level" : 1,
+			      "duration" :1,
+			      "effects" : [{"name": "health-", "level" : 1, "start": 0, "end" : 72}, {"name": "poison", "level" : 1, "start": 0, "end" : 72}]
+			    },
+			    "nextCondChance" : 0.1
+			  }
+			]
+		},
+		"*-hard-3" : {
+			augmentTime : 400,
+			augmentName : "hard3",
+			attackInjuries : [
+				{
+			    "name" : "abrasion",
+			    "level" : 1,
+			    "duration" : 1,
+			    "chance" : 0.3,
+			    "type" : "injury",
+			    "effects" : [{"name": "defense-", "level" : 1, "start" : 0, "end" : 24}],
+			    "nextCond" : {
+			      "name" : "infectedwound",
+			      "type" : "bacterial",
+			      "level" : 1,
+			      "duration" :1,
+			      "effects" : [{"name": "health-", "level" : 1, "start": 0, "end" : 72}, {"name": "poison", "level" : 1, "start": 0, "end" : 72}]
+			    },
+			    "nextCondChance" : 0.1
+			  }
+			]
+		}
+	},
+	shape: { base: "ailments:item/augmentmodule" },
+	textureByType: {
+		"*-1" : { base: "game:block/metal/ingot/copper"},
+		"*-2" : { base: "game:block/metal/ingot/iron"},
+		"*-3" : { base: "game:block/metal/ingot/tinbronze"}
+	},
+	creativeinventory: { "general": ["*"], "items": ["*"] },
+	maxstacksize: 64,
+	materialDensity: 200,
+  guiTransform: {
+  translation: { x: -8, y: -3, z: 0 },
+  rotation: { x: 167, y: 41, z: 1 },
+  scale: 1.66
+},
+fpHandTransform: {
+  rotation: { x: 21, y: 90, z: -30 }
+},
+tpHandTransform: {
+  translation: { x: -1.9, y: -1.4, z: -1.6 },
+  rotation: { x: 15, y: -50, z: -28 }
+},
+groundTransform: {
+  translation: { x: 0, y: 0.15, z: 0 },
+  rotation: { x: 1, y: 0, z: 3 },
+  origin: { x: 0.5, y: 0.5, z: 0.5299 },
+  scale: 1.5
+},
+}

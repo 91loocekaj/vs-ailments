@@ -1,0 +1,19 @@
+[
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "condsviewer"
+    },
+    "file": "game:entities/land/bell.json"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "condscontroller",
+      "revengeAmount" : 1
+    },
+    "file": "game:entities/land/bell.json"
+  }
+]

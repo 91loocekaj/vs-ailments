@@ -1,0 +1,14 @@
+[
+  {
+    "op": "add",
+    "path": "/attributes/squeezeInto",
+    "value": "ailments:fruitjuiceportion",
+    "file": "game:itemtypes/food/fruit.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/squeezeRatio",
+    "value": 1,
+    "file": "game:itemtypes/food/fruit.json"
+  }
+]

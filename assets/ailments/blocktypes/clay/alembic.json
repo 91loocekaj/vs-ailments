@@ -1,0 +1,82 @@
+{
+	code: "alembic",
+	variantgroups: [
+		{ code: "type", states: ["raw","burned","filled"]}
+	],
+	classByType: {
+		"*-burned": "BlockDistillingContainer",
+		"*-filled": "BlockDistilledContainer"
+	},
+	entityclassByType: {"*-filled": "BEDistilledContainer"},
+	creativeinventory: { "general": ["*-raw","*-burned"] },
+	drawtype: "JSON",
+	replaceable: 5000,
+	behaviors: [{name: "RightClickPickup" },{name: "SneakPlacing"}, {name: "UnstableFalling", properties: { attachmentArea: { x1: 5, y1: 0, z1: 5, x2: 10, y2: 0, z2: 10 } }}],
+	attributesByType: {
+	  "*-burned": {
+	    cookingContainerSlots: 1,
+	    inFirePitProps: {
+	      transform: {
+	        translation: { x: 0, y: 0.05, z: 0 }
+	                 },
+	  useFirepitModel: "Wide"
+	    }
+    },
+		"*-filled": {
+			"handleLiquidContainerInteract": true,
+			capacityLitres: 20,
+	    inFirePitProps: {
+	      transform: {
+	        translation: { x: 0, y: 0.05, z: 0 }
+	                 },
+	  useFirepitModel: "Wide"
+	    }
+    }
+  },
+	combustiblePropsByType: {
+		"alembic-raw": {
+			meltingPoint: 600,
+			meltingDuration: 30,
+			smeltedRatio: 1,
+			smeltingType: "bake",
+			smeltedStack: { type: "block", code: "alembic-burned" },
+			requiresContainer: false
+		}
+	},
+	blockmaterial: "Ceramic",
+	shape: { base: "block/alembic" },
+	renderpass: "OpaqueNoCull",
+	lightAbsorption: 0,
+	sideopaque: {
+		all: false
+	},
+	collisionbox: { x1: 0.1625, y1: 0, z1: 0.1625, x2: 0.8375, y2: 0.875, z2: 0.8375 },
+	selectionBox: { x1: 0.1625, y1: 0, z1: 0.1625, x2: 0.8375, y2: 0.875, z2: 0.8375 },
+	sidesolid: {
+		all: false
+	},
+	texturesByType: {
+		"*-raw": { all: {  base: "game:block/clay/blueclay", }  },
+		"*": { all: {  base: "game:block/clay/ceramic", }  }
+	},
+	resistance: 0.5,
+	guiTransform: {
+	rotation: { x: -22.6, y: -125, z: 0 },
+	origin: { x: 0.5, y: 0.4, z: 0.5 },
+	scale: 1.4
+},
+	groundTransform: {
+		scale: 3
+	},
+	fpHandTransform: {
+		translation: { x: 0, y: 0, z: 0.5 },
+		origin: { x: 0.5, y: 0, z: 0.5 },
+		scale: 2
+	},
+	tpHandTransform: {
+	translation: { x: -0.56, y: -0.03, z: -0.9 },
+	rotation: { x: 106, y: -11, z: -103 },
+	origin: { x: 0.5, y: 0.01, z: 0.5 },
+	scale: 0.69
+}
+}

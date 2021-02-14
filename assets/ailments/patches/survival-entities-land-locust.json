@@ -1,0 +1,21 @@
+[
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "condscontroller",
+      "carrierOf" : [],
+      "attackDiseases" : [{"name" : "testDisease", "level": 1, "duration" : 1, "type": "injury","effects": [{"name": "healthy", "level" : 1, "start" : 0, "end" : 2}] }],
+      "reviveAmount" : 1,
+    },
+    "file": "game:entities/land/locust.json"
+  },
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "condsviewer"
+    },
+    "file": "game:entities/land/locust.json"
+  }
+]

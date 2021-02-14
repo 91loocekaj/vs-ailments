@@ -1,0 +1,8 @@
+[
+  {
+    "op": "replace",
+    "path": "/class",
+    "value": "ItemEnhancedArrow",
+    "file": "game:itemtypes/tool/arrow.json"
+  }
+]

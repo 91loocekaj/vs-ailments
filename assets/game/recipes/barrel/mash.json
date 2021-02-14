@@ -1,0 +1,9 @@
+{
+	code: "mash",
+  sealHours: 24,
+	ingredients: [
+		{ type: "item", code: "game:waterportion",  quantity: 1 },
+		{ type: "item", code: "ailments:malt", quantity: 1},
+	],
+	output: { type: "item", code: "ailments:mashportion", stackSize: 1 },
+}

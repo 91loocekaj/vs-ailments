@@ -1,0 +1,31 @@
+[
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "condscontroller",
+      spontaneousDiseases: [
+        {
+          "name" : "test",
+          "type" : "test",
+          "level" : 1,
+          "combine" : true,
+          "duration" : 1,
+          "chance" :  1,
+          "vectors" : ["hare-*"],
+          "contagiousChance" : 5,
+          "effects" : [{"name": "bleed", "level": 1, "start": 0, "end": 20}, {"name": "contagious", "level": 1, "start": 0, "end": 20}]
+        }
+      ]
+    },
+    "file": "game:entities/land/strawdummy.json"
+  },
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "condsviewer"
+    },
+    "file": "game:entities/land/strawdummy.json"
+  }
+]

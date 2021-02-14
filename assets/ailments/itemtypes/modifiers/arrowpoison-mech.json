@@ -1,0 +1,65 @@
+{
+	code: "arrowpoison",
+	variantgroups: [
+  { code: "type", states: ["mech"]},
+	{ code: "subtype", states: ["tranquilizer", "weakener", "confusion", "killer"]}
+],
+	attributesByType: {
+		"*-tranquilizer": {
+			poisonName: "mechtranquilizer",
+			arrowPoison: [{
+				name: "tranquilizer",
+				type: "poison",
+        mech: true,
+				level: 1,
+				duration: 1,
+				effects: [{name: "speed-", level: 2, start: 0, end: 1}]
+				}]
+		},
+		"*-weakener": {
+			poisonName: "mechweakener",
+			arrowPoison: [{
+				name: "weakener",
+				type: "poison",
+        mech: true,
+				level: 1,
+				duration: 1,
+				effects: [{name: "defense-", level: 1, start: 0, end: 1}]
+				}]
+		},
+		"*-confusion": {
+			poisonName: "mechconfusion",
+			arrowPoison: [{
+				name: "confusion",
+				type: "poison",
+        mech: true,
+				level: 1,
+				duration: 1,
+				effects: [{name: "punch-", level: 1, start: 0, end: 1}, {name: "throw-", level: 1, start: 0, end: 1}]
+				}]
+		},
+		"*-killer": {
+			poisonName: "mechkiller",
+			arrowPoison: [{
+				name: "killer",
+				type: "poison",
+        mech: true,
+				combine : true,
+				level: 1,
+				duration: 1,
+				effects: [{name: "poison", level: 16, start: 1, end: 1}]
+				}]
+		},
+	},
+	texture: { base: "ailments:item/poisonbottle-mech-{subtype}" },
+	creativeinventory: { "general": ["*"], "items": ["*"] },
+	maxstacksize: 64,
+	materialDensity: 2000,
+	guiTransform: {
+	translation: { x: 3, y: 11, z: 0 },
+	scale: 1.51
+},
+fpHandTransform: {
+	translation: { x: 0.05, y: -0.2, z: 0 }
+},
+}

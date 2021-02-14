@@ -1,0 +1,110 @@
+[
+  {
+  	ingredientPattern: "PIR",
+  	ingredients: {
+  		"P": { type: "block", code: "game:metal-parts" },
+      "R" : { type: "block", code: "game:metal-scraps" },
+  		"I": { type: "block", code: "game:rock-*", name: "rock", allowedVariants: ["chalk", "chert", "conglomerate", "limestone", "claystone", "sandstone", "shale"]  }
+  	},
+  	name: "weight1",
+  	width: 3,
+  	height: 1,
+  	output: { type: "item", code: "ailments:weaponaugment-weight-1"  }
+  },
+  {
+  	ingredientPattern: "P__,PIR,__R",
+  	ingredients: {
+  		"P": { type: "block", code: "game:metal-parts" },
+      "R" : { type: "block", code: "game:metal-scraps" },
+  		"I": { type: "block", code: "game:rock-*", name: "rock", allowedVariants: ["andesite", "granite", "basalt", "bauxite", "peridotite"]  }
+  	},
+  	name: "weight2",
+  	width: 3,
+  	height: 3,
+  	output: { type: "item", code: "ailments:weaponaugment-weight-2"  }
+  },
+  {
+  	ingredientPattern: "PP_,PIR,_RR",
+  	ingredients: {
+  		"P": { type: "block", code: "game:metal-parts" },
+      "R" : { type: "block", code: "game:metal-scraps" },
+  		"I": { type: "block", code: "game:rock-*", name: "rock", allowedVariants: ["phyllite", "slate"]  }
+  	},
+  	name: "weight3",
+  	width: 3,
+  	height: 3,
+  	output: { type: "item", code: "ailments:weaponaugment-weight-3"  }
+  },
+  {
+  	ingredientPattern: "PIR",
+  	ingredients: {
+  		"P": { type: "block", code: "game:metal-parts" },
+      "R" : { type: "block", code: "game:metal-scraps" },
+  		"I": { type: "item", code: "game:clearquartz"}
+  	},
+  	name: "hard1",
+  	width: 3,
+  	height: 1,
+  	output: { type: "item", code: "ailments:weaponaugment-hard-1"  }
+  },
+  {
+  	ingredientPattern: "P__,PIR,__R",
+  	ingredients: {
+  		"P": { type: "block", code: "game:metal-parts" },
+      "R" : { type: "block", code: "game:metal-scraps" },
+  		"I": { type: "item", code: "game:ore-olivine"}
+  	},
+  	name: "hard2",
+  	width: 3,
+  	height: 3,
+  	output: { type: "item", code: "ailments:weaponaugment-hard-2"  }
+  },
+  {
+  	ingredientPattern: "PP_,PIR,_RR",
+  	ingredients: {
+  		"P": { type: "block", code: "game:metal-parts" },
+      "R" : { type: "block", code: "game:metal-scraps" },
+  		"I": { type: "item", code: "game:gem-diamond-rough"}
+  	},
+  	name: "hard3",
+  	width: 3,
+  	height: 3,
+  	output: { type: "item", code: "ailments:weaponaugment-hard-3"  }
+  },
+  {
+  	ingredientPattern: "PIR",
+  	ingredients: {
+  		"P": { type: "block", code: "game:metal-parts" },
+      "R" : { type: "block", code: "game:metal-scraps" },
+  		"I": { type: "item", code: "game:nugget-pentlandite"}
+  	},
+  	name: "sharp1",
+  	width: 3,
+  	height: 1,
+  	output: { type: "item", code: "ailments:weaponaugment-sharp-1"  }
+  },
+  {
+  	ingredientPattern: "P__,PIR,__R",
+  	ingredients: {
+  		"P": { type: "block", code: "game:metal-parts" },
+      "R" : { type: "block", code: "game:metal-scraps" },
+  		"I": { type: "item", code: "game:nugget-ilmenite"}
+  	},
+  	name: "sharp2",
+  	width: 3,
+  	height: 3,
+  	output: { type: "item", code: "ailments:weaponaugment-sharp-2"  }
+  },
+  {
+  	ingredientPattern: "PP_,PIR,_RR",
+  	ingredients: {
+  		"P": { type: "block", code: "game:metal-parts" },
+      "R" : { type: "block", code: "game:metal-scraps" },
+  		"I": { type: "item", code: "game:nugget-chromite"}
+  	},
+  	name: "sharp3",
+  	width: 3,
+  	height: 3,
+  	output: { type: "item", code: "ailments:weaponaugment-sharp-3"  }
+  }
+]

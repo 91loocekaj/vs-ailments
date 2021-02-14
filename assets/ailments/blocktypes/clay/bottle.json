@@ -1,0 +1,216 @@
+{
+	code: "bottle",
+	variantgroups: [
+		{ code: "type", states: ["raw","burned", "wine", "fruitjuice", "ale", "distilledalcohol", "foodoil", "medicine", "water", "vinegar","oxymel", "elixir", "cream"]}
+	],
+	classByType: {
+		"*-medicine": "BlockMedicineContainer",
+		"*" : "BlockBottle"
+	},
+	entityclassByType: {
+		"*-medicine": "BEMedicineContainer",
+	},
+	creativeinventory: { "general": ["*-raw", "*-burned", "*-wine", "*-fruitjuice", "*-ale", "*-distilledalcohol", "*-foodoil", "*-water", "*-vinegar", "*-oxymel", "*-elixir", "*-cream"] },
+	drawtype: "JSON",
+	replaceable: 5000,
+	behaviors: [{name: "RightClickPickup" },{name: "SneakPlacing"}, {name: "UnstableFalling", properties: { attachmentArea: { x1: 5, y1: 0, z1: 5, x2: 10, y2: 0, z2: 10 } }}],
+	attributesByType: {
+		"*-burned" : {
+			shelvable: true,
+			contentItem2BlockCodes: {
+				"wineportion": "ailments:bottle-wine",
+				"fruitjuiceportion": "ailments:bottle-fruitjuice",
+				"aleportion": "ailments:bottle-ale",
+				"distilledalcoholportion": "ailments:bottle-distilledalcohol",
+				"foodoilportion": "ailments:bottle-foodoil",
+				"waterportion" : "ailments:bottle-water",
+				"vinegarportion" : "ailments:bottle-vinegar"
+			}
+			},
+			"*-wine": {
+				shelvable: true,
+				contentItemCode: "ailments:wineportion",
+				emptiedBlockCode: "ailments:bottle-burned",
+				drunkCond: {
+					name: "drunk",
+					level: 1,
+					duration: 1,
+					effects : [{name: "shaky", level: 1, start: 1, end: 6}, {name: "heavy", level: 1, start: 1, end: 6}]
+				}
+			},
+			"*-fruitjuice": {
+				shelvable: true,
+				contentItemCode: "ailments:fruitjuiceportion",
+				emptiedBlockCode: "ailments:bottle-burned",
+			},
+			"*-ale": {
+				shelvable: true,
+				contentItemCode: "ailments:aleportion",
+				emptiedBlockCode: "ailments:bottle-burned",
+				drunkCond: {
+					name: "drunk",
+					level: 1,
+					duration: 1,
+					effects : [{name: "shaky", level: 1, start: 1, end: 6}, {name: "heavy", level: 1, start: 1, end: 6}]
+				}
+			},
+			"*-distilledalcohol": {
+				shelvable: true,
+				contentItemCode: "ailments:distilledalcoholportion",
+				emptiedBlockCode: "ailments:bottle-burned",
+				turnToMed: "ailments:med-tincture-unready",
+				exLevel: 3,
+				exDur: 1,
+				redStart: -1
+			},
+			"*-foodoil": {
+				shelvable: true,
+				contentItemCode: "ailments:foodoilportion",
+				emptiedBlockCode: "ailments:bottle-burned",
+				turnToMed: "ailments:med-oil-unready",
+				exLevel: 2,
+				exDur: 1
+			},
+			"*-water": {
+				shelvable: true,
+				contentItemCode: "game:waterportion",
+				emptiedBlockCode: "ailments:bottle-burned",
+				turnToMed: "ailments:med-tea-unready"
+			},
+			"*-vinegar": {
+				shelvable: true,
+				contentItemCode: "ailments:vinegarportion",
+				emptiedBlockCode: "ailments:bottle-burned",
+				turnToMed: "ailments:med-vinegar-unready",
+				redStart: 2
+			},
+			"*-oxymel": {
+				shelvable: true,
+				turnToMed: "ailments:med-oxymel-unready",
+				exLevel: 1,
+				exDur: 2,
+				redStart: 2
+			},
+			"*-cream": {
+				shelvable: true,
+				turnToMed: "ailments:med-cream-ready",
+				exLevel: 2,
+				exDur: 2
+			},
+			"*-elixir": {
+				shelvable: true,
+				turnToMed: "ailments:med-elixir-unready",
+				exLevel: 3,
+				exDur: 2,
+				redStart: -1
+			},
+			"*-medicine":{
+				inFirePitProps: {
+					transform:{
+					  translation: { x: 0, y: 0.05, z: 0 }
+					},
+					useFirepitModel : "Wide"
+				},
+				shelvable: true
+			},
+			"*": {shelvable: true}
+	},
+	combustiblePropsByType: {
+		"bottle-raw": {
+			meltingPoint: 600,
+			meltingDuration: 30,
+			smeltedRatio: 1,
+			smeltingType: "bake",
+			smeltedStack: { type: "block", code: "bottle-burned" },
+			requiresContainer: false
+		}
+	},
+	nutritionPropsByType: {
+		"*-wine": {
+			saturation: 100,
+			eatenStack: { type: "block", code: "bottle-burned" }
+		},
+		"*-vinegar": {
+			saturation: 50,
+			eatenStack: { type: "block", code: "bottle-burned" }
+		},
+		"*-ale": {
+			saturation: 100,
+			eatenStack: { type: "block", code: "bottle-burned" }
+		},
+		"*-foodoil": {
+			saturation: 200,
+			eatenStack: { type: "block", code: "bottle-burned" }
+		},
+		"*-fruitjuice": {
+			saturation: 10,
+			eatenStack: { type: "block", code: "bottle-burned" }
+		}
+	},
+	transitionablePropsByType: {
+		"*-ale" : [{
+	    type: "Perish",
+	    freshHours: { avg: 1440 },
+	    transitionHours: { avg: 12 },
+	    transitionedStack: { type: "block", code: "ailments:bottle-burned" },
+	    transitionRatio: 0.5
+	  }],
+		"*-wine" : [{
+	    type: "Perish",
+	    freshHours: { avg: 240 },
+	    transitionHours: { avg: 12 },
+	    transitionedStack: { type: "block", code: "ailments:bottle-vinegar" },
+	    transitionRatio: 1
+	  }],
+		"*-fruitjuice": [{
+	    type: "Perish",
+	    freshHours: { avg: 72 },
+	    transitionHours: { avg: 12 },
+	    transitionedStack: { type: "block", code: "ailments:bottle-vinegar" },
+	    transitionRatio: 1
+	  }],
+	},
+	maxstacksizeByType: {"*-raw": 64},
+	blockmaterial: "Ceramic",
+	shape: { base: "block/bottle" },
+	renderpass: "OpaqueNoCull",
+	lightAbsorption: 0,
+	sideopaque: {
+		all: false
+	},
+	collisionbox: {
+		x1: 0.4, y1: 0, z1: 0.4,
+		x2: 0.6, y2: 0.375, z2: 0.6
+	},
+	selectionbox: {
+		x1: 0.35, y1: 0, z1: 0.35,
+		x2: 0.65, y2: 0.375, z2: 0.65
+	},
+	sidesolid: {
+		all: false
+	},
+	texturesByType: {
+		"*-raw": { all: {  base: "game:block/clay/blueclay", }  },
+		"*": { all: {  base: "game:block/clay/ceramic", }  }
+	},
+	resistance: 0.5,
+	guiTransform: {
+		rotation: { x: -22.6, y: -125, z: 0 },
+		origin: { x: 0.5, y: 0.18, z: 0.5 },
+		scale: 3.09
+	},
+	groundTransform: {
+		scale: 5
+	},
+	fpHandTransform: {
+		translation: { x: 0, y: 0, z: 0.5 },
+		origin: { x: 0.5, y: 0, z: 0.5 },
+		scale: 2
+	},
+	tpHandTransform: {
+	translation: { x: -0.66, y: -0.03, z: -0.65 },
+	rotation: { x: -139, y: 9, z: -118 },
+	origin: { x: 0.5, y: 0.01, z: 0.5 },
+	scale: 0.81
+}
+}

@@ -1,0 +1,8 @@
+[
+  {
+    "op": "add",
+    "path": "/server/behaviors/2/aitasks/0/damageType",
+    "value": "Poison",
+    "file": "game:entities/air/beemob.json"
+  }
+]

@@ -1,0 +1,18 @@
+{
+	code: "sproutedgrain",
+	attributes: {},
+	texture: { base: "ailments:item/fermentation/sproutedgrain" },
+	creativeinventory: { "general": ["*"], "items": ["*"] },
+	maxstacksize: 64,
+  grindingProps: {
+		grindedStack: { type: "item", code: "ailments:malt" }
+	},
+	materialDensity: 200,
+  transitionableProps: [{
+    type: "Perish",
+    freshHours: { avg: 240 },
+    transitionHours: { avg: 72 },
+    transitionedStack: { type: "item", code: "game:rot" },
+    transitionRatio: 1
+  }],
+}

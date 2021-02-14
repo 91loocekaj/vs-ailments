@@ -1,0 +1,14 @@
+[
+  {
+    "op": "replace",
+    "path": "/class",
+    "value": "ItemFirstAid",
+    "file": "game:itemtypes/poultice.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributesByType/*-reed-horsetail/firstAidRemoval",
+    "value": ["laceration", "basil"],
+    "file": "game:itemtypes/poultice.json"
+  }
+]

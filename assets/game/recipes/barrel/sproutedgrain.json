@@ -1,0 +1,20 @@
+[
+{
+	code: "sproutedgrain",
+  sealHours: 24,
+	ingredients: [
+		{ type: "item", code: "game:waterportion",  quantity: 1 },
+		{ type: "item", code: "game:grain-rye", quantity: 4}
+	],
+	output: { type: "item", code: "ailments:sproutedgrain", stackSize: 4 }
+},
+{
+	code: "sproutedgrain",
+  sealHours: 24,
+	ingredients: [
+		{ type: "item", code: "game:waterportion",  quantity: 1 },
+		{ type: "item", code: "game:grain-spelt", quantity: 4}
+	],
+	output: { type: "item", code: "ailments:sproutedgrain", stackSize: 4 }
+}
+]

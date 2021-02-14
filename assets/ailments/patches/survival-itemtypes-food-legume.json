@@ -1,0 +1,14 @@
+[
+  {
+    "op": "add",
+    "path": "/attributes/squeezeInto",
+    "value": "ailments:foodoilportion",
+    "file": "game:itemtypes/food/legume.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/squeezeRatio",
+    "value": 5,
+    "file": "game:itemtypes/food/legume.json"
+  }
+]

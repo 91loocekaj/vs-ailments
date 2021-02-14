@@ -1,0 +1,8 @@
+[
+  {
+    "op": "replace",
+    "path": "/class",
+    "value": "ItemEnhancedSpear",
+    "file": "game:itemtypes/tool/spear.json"
+  }
+]

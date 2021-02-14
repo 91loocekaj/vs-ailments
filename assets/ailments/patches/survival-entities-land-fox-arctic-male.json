@@ -1,0 +1,19 @@
+[
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "condsviewer"
+    },
+    "file": "game:entities/land/fox-arctic-male.json"
+  },
+
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "condscontroller"
+    },
+    "file": "game:entities/land/fox-arctic-male.json"
+  }
+]

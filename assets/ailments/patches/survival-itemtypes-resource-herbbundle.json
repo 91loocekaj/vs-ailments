@@ -1,0 +1,114 @@
+[
+  {
+    "op": "replace",
+    "path": "/attributes/handbook",
+    "value": {},
+    "file": "game:itemtypes/resource/herbbundle.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/herbPropertiesByType",
+    "value": {
+      "*-basil": [
+        {
+          "name" : "basil",
+          "type" : "drug",
+          "level" : 1,
+          "combine" : true,
+          "duration" : 1,
+          "chance" : 1,
+          "effects" : [{"name": "metabolism+", "level": 1, "start": 3, "end": 9}, {"name": "resistance", "level": 1, "start": 11, "end": 1, "addInfo" : "bacterial"}]
+        }
+      ],
+      "*-chamomile": [
+        {
+          "name" : "chamomile",
+          "type" : "drug",
+          "level" : 1,
+          "combine" : true,
+          "duration" : 1,
+          "chance" : 1,
+          "effects" : [{"name": "health+", "level": 1, "start": 6, "end": 6}, {"name": "resistance", "level": 1, "start": 11, "end": 1, "addInfo" : "viral"}]
+        }
+      ],
+      "*-cilantro": [
+        {
+          "name" : "cilantro",
+          "type" : "drug",
+          "level" : 1,
+          "combine" : true,
+          "duration" : 1,
+          "chance" : 1,
+          "effects" : [{"name": "immune+", "level": 1, "start": 3, "end": 9}, {"name": "resistance", "level": 1, "start": 11, "end": 1, "addInfo" : "parasitic"}]
+        }
+      ],
+      "*-lavender": [
+        {
+          "name" : "lavender",
+          "type" : "drug",
+          "level" : 1,
+          "combine" : true,
+          "duration" : 1,
+          "chance" : 1,
+          "effects" : [{"name": "temporal+", "level": 1, "start": 3, "end": 9}, {"name": "resistance", "level": 1, "start": 11, "end": 1, "addInfo" : "bacterial"}]
+        }
+      ],
+      "*-marjoram": [
+        {
+          "name" : "marjoram",
+          "type" : "drug",
+          "level" : 1,
+          "combine" : true,
+          "duration" : 1,
+          "chance" : 1,
+          "effects" : [{"name": "gear+", "level": 1, "start": 9, "end": 3}, {"name": "resistance", "level": 1, "start": 11, "end": 1, "addInfo" : "viral"}, {"name": "resistance", "level": 1, "start": 11, "end": 1, "addInfo" : "fungal"}]
+        }
+      ],
+      "*-mint": [
+        {
+          "name" : "mint",
+          "type" : "drug",
+          "level" : 1,
+          "combine" : true,
+          "duration" : 1,
+          "chance" : 1,
+          "effects" : [{"name": "digest+", "level": 1, "start": 2, "end": 10}, {"name": "resistance", "level": 1, "start": 11, "end": 1, "addInfo" : "parasitic"}]
+        }
+      ],
+      "*-saffron": [
+        {
+          "name" : "saffron",
+          "type" : "drug",
+          "level" : 1,
+          "combine" : true,
+          "duration" : 1,
+          "chance" : 1,
+          "effects" : [{"name": "coag+", "level": 1, "start": 6, "end": 6}, {"name": "resistance", "level": 1, "start": 11, "end": 1, "addInfo" : "bacterial"}]
+        }
+      ],
+      "*-sage": [
+        {
+          "name" : "sage",
+          "type" : "drug",
+          "level" : 1,
+          "combine" : true,
+          "duration" : 1,
+          "chance" : 1,
+          "effects" : [{"name": "dodge+", "level": 3, "start": 9, "end": 3}, {"name": "resistance", "level": 1, "start": 11, "end": 1, "addInfo" : "viral"}]
+        }
+      ],
+      "*-thyme": [
+        {
+          "name" : "thyme",
+          "type" : "drug",
+          "level" : 1,
+          "combine" : true,
+          "duration" : 1,
+          "chance" : 1,
+          "effects" : [{"name": "spread-", "level": 1, "start": 2, "end": 10}, {"name": "resistance", "level": 1, "start": 11, "end": 1, "addInfo" : "parasitic"}, {"name": "resistance", "level": 1, "start": 11, "end": 1, "addInfo" : "fungal"}]
+        }
+      ]
+    },
+    "file": "game:itemtypes/resource/herbbundle.json"
+  }
+]

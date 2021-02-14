@@ -1,0 +1,18 @@
+[
+  {
+    "op": "add",
+    "path": "/attributes/herbProperties",
+    "value": [
+      {
+        "name" : "rafflesia",
+        "type" : "drug",
+        "level" : 1,
+        "combine" : true,
+        "duration" : 1,
+        "chance" : 1,
+        "effects" : [{"name": "digest+", "level": 2, "start": 2, "end": 10}, {"name": "resistance", "level": 1, "start": 11, "end": 1, "addInfo" : "bacterial"}]
+      }
+    ],
+    "file": "game:blocktypes/plant/rafflesia.json"
+  }
+]

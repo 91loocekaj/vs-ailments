@@ -1,0 +1,18 @@
+[
+  {
+    "op": "add",
+    "path": "/attributes/herbProperties",
+    "value": [
+      {
+        "name" : "croton",
+        "type" : "drug",
+        "level" : 1,
+        "combine" : true,
+        "duration" : 1,
+        "chance" : 1,
+        "effects" : [{"name": "hunger+", "level": 1, "start": 2, "end": 10}, {"name": "resistance", "level": 1, "start": 11, "end": 1, "addInfo" : "parasitic"}]
+      }
+    ],
+    "file": "game:blocktypes/plant/croton.json"
+  }
+]

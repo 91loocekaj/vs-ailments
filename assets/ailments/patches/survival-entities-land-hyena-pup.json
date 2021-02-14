@@ -1,0 +1,18 @@
+[
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "condsviewer"
+    },
+    "file": "game:entities/land/hyena-pup.json"
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "condscontroller"
+    },
+    "file": "game:entities/land/hyena-pup.json"
+  }
+]

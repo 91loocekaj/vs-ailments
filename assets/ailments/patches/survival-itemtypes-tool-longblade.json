@@ -1,0 +1,8 @@
+[
+  {
+    "op": "add",
+    "path": "/class",
+    "value": "ItemEnhancedWeapon",
+    "file": "game:itemtypes/tool/longblade.json"
+  }
+]

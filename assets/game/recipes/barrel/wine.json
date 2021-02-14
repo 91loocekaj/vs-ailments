@@ -1,0 +1,83 @@
+[
+{
+	code: "wine",
+  sealHours: 240,
+	ingredients: [
+		{ type: "item", code: "game:herbbundle-basil",  quantity: 1 },
+		{ type: "item", code: "ailments:fruitjuiceportion", quantity: 20}
+	],
+	output: { type: "item", code: "ailments:wineportion", stackSize: 20 }
+},
+{
+	code: "wine",
+  sealHours: 240,
+	ingredients: [
+		{ type: "item", code: "game:herbbundle-chamomile",  quantity: 1 },
+		{ type: "item", code: "ailments:fruitjuiceportion", quantity: 20}
+	],
+	output: { type: "item", code: "ailments:wineportion", stackSize: 20 }
+},
+{
+	code: "wine",
+  sealHours: 240,
+	ingredients: [
+		{ type: "item", code: "game:herbbundle-cilantro",  quantity: 1 },
+		{ type: "item", code: "ailments:fruitjuiceportion", quantity: 20}
+	],
+	output: { type: "item", code: "ailments:wineportion", stackSize: 20 }
+},
+{
+	code: "wine",
+  sealHours: 240,
+	ingredients: [
+		{ type: "item", code: "game:herbbundle-lavender",  quantity: 1 },
+		{ type: "item", code: "ailments:fruitjuiceportion", quantity: 20}
+	],
+	output: { type: "item", code: "ailments:wineportion", stackSize: 20 }
+},
+{
+	code: "wine",
+  sealHours: 240,
+	ingredients: [
+		{ type: "item", code: "game:herbbundle-marjoram",  quantity: 1 },
+		{ type: "item", code: "ailments:fruitjuiceportion", quantity: 20}
+	],
+	output: { type: "item", code: "ailments:wineportion", stackSize: 20 }
+},
+{
+	code: "wine",
+  sealHours: 240,
+	ingredients: [
+		{ type: "item", code: "game:herbbundle-mint",  quantity: 1 },
+		{ type: "item", code: "ailments:fruitjuiceportion", quantity: 20}
+	],
+	output: { type: "item", code: "ailments:wineportion", stackSize: 20 }
+},
+{
+	code: "wine",
+  sealHours: 240,
+	ingredients: [
+		{ type: "item", code: "game:herbbundle-saffron",  quantity: 1 },
+		{ type: "item", code: "ailments:fruitjuiceportion", quantity: 20}
+	],
+	output: { type: "item", code: "ailments:wineportion", stackSize: 20 }
+},
+{
+	code: "wine",
+  sealHours: 240,
+	ingredients: [
+		{ type: "item", code: "game:herbbundle-sage",  quantity: 1 },
+		{ type: "item", code: "ailments:fruitjuiceportion", quantity: 20}
+	],
+	output: { type: "item", code: "ailments:wineportion", stackSize: 20 }
+},
+{
+	code: "wine",
+  sealHours: 240,
+	ingredients: [
+		{ type: "item", code: "game:herbbundle-thyme",  quantity: 1 },
+		{ type: "item", code: "ailments:fruitjuiceportion", quantity: 20}
+	],
+	output: { type: "item", code: "ailments:wineportion", stackSize: 20 }
+}
+]

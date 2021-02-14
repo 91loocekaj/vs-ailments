@@ -1,0 +1,35 @@
+[
+  {
+  	ingredientPattern: "_H_,_B_",
+  	ingredients: {
+  		"H": { type: "block", code: "game:bowl-honey", returnedStack: { type: "block", code: "game:bowl-burned" } },
+      "B" : { type: "block", code: "ailments:bottle-vinegar" },
+  	},
+  	name: "oxymel",
+  	width: 3,
+  	height: 2,
+  	output: { type: "block", code: "ailments:bottle-oxymel"  }
+  },
+  {
+  	ingredientPattern: "_H_,_B_",
+  	ingredients: {
+  		"H": { type: "block", code: "game:bowl-honey", returnedStack: { type: "block", code: "game:bowl-burned" } },
+      "B" : { type: "block", code: "ailments:bottle-distilledalcohol" },
+  	},
+  	name: "elixir",
+  	width: 3,
+  	height: 2,
+  	output: { type: "block", code: "ailments:bottle-elixir"  }
+  },
+  {
+  	ingredientPattern: "_H_,_B_",
+  	ingredients: {
+  		"H": { type: "item", code: "game:beeswax"},
+      "B" : { type: "block", code: "ailments:bottle-foodoil" },
+  	},
+  	name: "cream",
+  	width: 3,
+  	height: 2,
+  	output: { type: "block", code: "ailments:bottle-cream"  }
+  },
+]

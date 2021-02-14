@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{182EAB8F-C9BE-450C-B7D5-701A2974A2C2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ailments</RootNamespace>
+    <AssemblyName>ailments</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>$(ProjectDir)\bin</OutputPath>
+    <IntermediateOutputPath>..\..\obj\Debug\ailments\</IntermediateOutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>$(ProjectDir)\bin</OutputPath>
+    <IntermediateOutputPath>..\..\obj\Release\ailments\</IntermediateOutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System"/>
+
+    <Reference Include="System.Core"/>
+    <Reference Include="System.Xml.Linq"/>
+    <Reference Include="System.Data.DataSetExtensions"/>
+
+
+    <Reference Include="Microsoft.CSharp"/>
+
+    <Reference Include="System.Data"/>
+
+    <Reference Include="System.Net.Http"/>
+
+    <Reference Include="System.Xml"/>
+
+    <Reference Include="VintagestoryAPI">
+      <HintPath>$(AppData)\Vintagestory\VintagestoryAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+
+    <Reference Include="VSSurvivalMod">
+      <HintPath>$(AppData)\Vintagestory\Mods\VSSurvivalMod.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+
+    <Reference Include="VSEssentials">
+      <HintPath>$(AppData)\Vintagestory\Mods\VSEssentials.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+
+    <Reference Include="VSCreativeMod">
+      <HintPath>$(AppData)\Vintagestory\Mods\VSCreativeMod.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>$(AppData)\Vintagestory\Lib\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets\" /><Content Include="assets\ailments\blocktypes\clay\alembic.json" />
+<Content Include="assets\ailments\blocktypes\clay\bottle.json" />
+<Content Include="assets\ailments\blocktypes\wood\press.json" />
+<Content Include="assets\ailments\config\injuries.json" />
+<Content Include="assets\ailments\itemtypes\dummy\med.json" />
+<Content Include="assets\ailments\itemtypes\liquid\aleportion.json" />
+<Content Include="assets\ailments\itemtypes\liquid\distilledalcoholportion.json" />
+<Content Include="assets\ailments\itemtypes\liquid\foodoilportion.json" />
+<Content Include="assets\ailments\itemtypes\liquid\fruitjuiceportion.json" />
+<Content Include="assets\ailments\itemtypes\liquid\mashportion.json" />
+<Content Include="assets\ailments\itemtypes\liquid\vinegarportion.json" />
+<Content Include="assets\ailments\itemtypes\liquid\wineportion.json" />
+<Content Include="assets\ailments\itemtypes\med\magnifyinglense.json" />
+<Content Include="assets\ailments\itemtypes\med\splint.json" />
+<Content Include="assets\ailments\itemtypes\modifiers\arrowpoison-mech.json" />
+<Content Include="assets\ailments\itemtypes\modifiers\arrowpoison.json" />
+<Content Include="assets\ailments\itemtypes\modifiers\weaponaugment.json" />
+<Content Include="assets\ailments\itemtypes\resource\malt.json" />
+<Content Include="assets\ailments\itemtypes\resource\sproutedgrain.json" />
+<Content Include="assets\ailments\lang\en.json" />
+<Content Include="assets\ailments\patches\farmlife-blocktypes-poop.json" />
+<Content Include="assets\ailments\patches\game-entities-humanoid-player.json" />
+<Content Include="assets\ailments\patches\survival-blocktypes-plant-croton.json" />
+<Content Include="assets\ailments\patches\survival-blocktypes-plant-flower-lupine.json" />
+<Content Include="assets\ailments\patches\survival-blocktypes-plant-flower.json" />
+<Content Include="assets\ailments\patches\survival-blocktypes-plant-mushroom.json" />
+<Content Include="assets\ailments\patches\survival-blocktypes-plant-rafflesia.json" />
+<Content Include="assets\ailments\patches\survival-entities-air-beemob.json" />
+<Content Include="assets\ailments\patches\survival-entities-arrow.json" />
+<Content Include="assets\ailments\patches\survival-entities-humanoid-trader-artisan.json" />
+<Content Include="assets\ailments\patches\survival-entities-humanoid-trader-buildmaterials.json" />
+<Content Include="assets\ailments\patches\survival-entities-humanoid-trader-clothing.json" />
+<Content Include="assets\ailments\patches\survival-entities-humanoid-trader-commodities.json" />
+<Content Include="assets\ailments\patches\survival-entities-humanoid-trader-foods.json" />
+<Content Include="assets\ailments\patches\survival-entities-humanoid-trader-furniture.json" />
+<Content Include="assets\ailments\patches\survival-entities-humanoid-trader-luxuries.json" />
+<Content Include="assets\ailments\patches\survival-entities-humanoid-trader-survivalgoods.json" />
+<Content Include="assets\ailments\patches\survival-entities-humanoid-trader-treasurehunter.json" />
+<Content Include="assets\ailments\patches\survival-entities-land-bell.json" />
+<Content Include="assets\ailments\patches\survival-entities-land-chicken-baby.json" />
+<Content Include="assets\ailments\patches\survival-entities-land-chicken-hen.json" />
+<Content Include="assets\ailments\patches\survival-entities-land-chicken-rooster.json" />
+<Content Include="assets\ailments\patches\survival-entities-land-drifter.json" />
+<Content Include="assets\ailments\patches\survival-entities-land-fox-arctic-female.json" />
+<Content Include="assets\ailments\patches\survival-entities-land-fox-arctic-male.json" />
+<Content Include="assets\ailments\patches\survival-entities-land-fox-female.json" />
+<Content Include="assets\ailments\patches\survival-entities-land-fox-male.json" />
+<Content Include="assets\ailments\patches\survival-entities-land-fox-pup.json" />
+<Content Include="assets\ailments\patches\survival-entities-land-hare-baby.json" />
+<Content Include="assets\ailments\patches\survival-entities-land-hare-female.json" />
+<Content Include="assets\ailments\patches\survival-entities-land-hare-male.json" />
+<Content Include="assets\ailments\patches\survival-entities-land-hyena-female.json" />
+<Content Include="assets\ailments\patches\survival-entities-land-hyena-male.json" />
+<Content Include="assets\ailments\patches\survival-entities-land-hyena-pup.json" />
+<Content Include="assets\ailments\patches\survival-entities-land-locust.json" />
+<Content Include="assets\ailments\patches\survival-entities-land-pig-wild-female.json" />
+<Content Include="assets\ailments\patches\survival-entities-land-pig-wild-male.json" />
+<Content Include="assets\ailments\patches\survival-entities-land-pig-wild-piglet.json" />
+<Content Include="assets\ailments\patches\survival-entities-land-raccoon-female.json" />
+<Content Include="assets\ailments\patches\survival-entities-land-raccoon-male.json" />
+<Content Include="assets\ailments\patches\survival-entities-land-raccoon-pup.json" />
+<Content Include="assets\ailments\patches\survival-entities-land-sheep-bighorn-female.json" />
+<Content Include="assets\ailments\patches\survival-entities-land-sheep-bighorn-lamb.json" />
+<Content Include="assets\ailments\patches\survival-entities-land-sheep-bighorn-male.json" />
+<Content Include="assets\ailments\patches\survival-entities-land-strawdummy.json" />
+<Content Include="assets\ailments\patches\survival-entities-land-wolf-female.json" />
+<Content Include="assets\ailments\patches\survival-entities-land-wolf-male.json" />
+<Content Include="assets\ailments\patches\survival-entities-land-wolf-pup.json" />
+<Content Include="assets\ailments\patches\survival-entities-spear.json" />
+<Content Include="assets\ailments\patches\survival-itemtypes-food-fruit.json" />
+<Content Include="assets\ailments\patches\survival-itemtypes-food-grain.json" />
+<Content Include="assets\ailments\patches\survival-itemtypes-food-legume.json" />
+<Content Include="assets\ailments\patches\survival-itemtypes-poultice.json" />
+<Content Include="assets\ailments\patches\survival-itemtypes-resource-herbbundle.json" />
+<Content Include="assets\ailments\patches\survival-itemtypes-tool-arrow.json" />
+<Content Include="assets\ailments\patches\survival-itemtypes-tool-bow.json" />
+<Content Include="assets\ailments\patches\survival-itemtypes-tool-longblade.json" />
+<Content Include="assets\ailments\patches\survival-itemtypes-tool-spear.json" />
+<Content Include="assets\ailments\patches\survival-itemtypes-tool-woodenclub.json" />
+<Content Include="assets\ailments\recipes\grid\arrowpoisons.json" />
+<Content Include="assets\ailments\recipes\grid\drinks.json" />
+<Content Include="assets\ailments\recipes\grid\splint.json" />
+<Content Include="assets\ailments\recipes\grid\weaponaugments.json" />
+<Content Include="assets\ailments\shapes\block\alembic.json" />
+<Content Include="assets\ailments\shapes\block\bottle.json" />
+<Content Include="assets\ailments\shapes\block\screwpress.json" />
+<Content Include="assets\ailments\shapes\item\augmentmodule.json" />
+<Content Include="assets\ailments\shapes\item\inoculationneedle.json" />
+<Content Include="assets\ailments\shapes\item\magnifyingglass.json" />
+<Content Include="assets\ailments\shapes\item\poisonbottle.json" />
+<Content Include="assets\ailments\textures\item\poison.png" />
+<Content Include="assets\ailments\textures\item\poisonbottle-confusion.png" />
+<Content Include="assets\ailments\textures\item\poisonbottle-killer.png" />
+<Content Include="assets\ailments\textures\item\poisonbottle-mech-confusion.png" />
+<Content Include="assets\ailments\textures\item\poisonbottle-mech-killer.png" />
+<Content Include="assets\ailments\textures\item\poisonbottle-mech-tranquilizer.png" />
+<Content Include="assets\ailments\textures\item\poisonbottle-mech-weakener.png" />
+<Content Include="assets\ailments\textures\item\poisonbottle-tranquilizer.png" />
+<Content Include="assets\ailments\textures\item\poisonbottle-weakener.png" />
+<Content Include="assets\ailments\textures\item\poisonsymbol.png" />
+<Content Include="assets\ailments\textures\item\wand.png" />
+<Content Include="assets\ailments\textures\item\fermentation\malt.png" />
+<Content Include="assets\ailments\textures\item\fermentation\sproutedgrain.png" />
+<Content Include="assets\ailments\textures\item\liquid\foodoilportion.png" />
+<Content Include="assets\ailments\textures\item\liquid\wine-redcurrant.png" />
+<Content Include="assets\ailments\textures\item\liquid\wineportion.png" />
+<Content Include="assets\ailments\textures\item\med\blend-generic.png" />
+<Content Include="assets\ailments\textures\item\med\blend-lavender.png" />
+<Content Include="assets\ailments\textures\item\med\blend-temporal.png" />
+<Content Include="assets\ailments\textures\item\med\blend-whiteflower.png" />
+<Content Include="assets\ailments\textures\item\med\concotionbag.png" />
+<Content Include="assets\ailments\textures\item\med\lense.png" />
+<Content Include="assets\ailments\textures\item\med\splint.png" />
+<Content Include="assets\game\lang\en.json" />
+<Content Include="assets\game\recipes\barrel\ale.json" />
+<Content Include="assets\game\recipes\barrel\mash.json" />
+<Content Include="assets\game\recipes\barrel\sproutedgrain.json" />
+<Content Include="assets\game\recipes\barrel\wine.json" />
+<Content Include="assets\game\recipes\clayforming\alembic.json" />
+<Content Include="assets\game\recipes\clayforming\bottle.json" />
+<Content Include="assets\game\recipes\clayforming\sixbottle.json" />
+<Content Include="assets\game\textures\block\liquid\foodoil.png" />
+<Content Include="assets\game\textures\block\liquid\fruitjuice.png" />
+<Content Include="assets\game\textures\block\liquid\mash.png" />
+
+    <Folder Include="src\" />
+    <Content Include="modinfo.json" /><Compile Include="src\Ailments.cs" />
+<Compile Include="src\Behavior\EntityBehaviorCondsController.cs" />
+<Compile Include="src\Behavior\EntityBehaviorCondsViewer.cs" />
+<Compile Include="src\Block\BlockBottle.cs" />
+<Compile Include="src\Block\BlockDistilledContainer.cs" />
+<Compile Include="src\Block\BlockDistillingContainer.cs" />
+<Compile Include="src\Block\BlockMedicineContainer.cs" />
+<Compile Include="src\Block\BlockScrewPress.cs" />
+<Compile Include="src\Block Behavior\BlockBehaviorDirty.cs" />
+<Compile Include="src\Block Behavior\BlockBehaviorTemporalHarvestable.cs" />
+<Compile Include="src\Block Entity\BEDistilledContainer.cs" />
+<Compile Include="src\Block Entity\BEMedicineContainer.cs" />
+<Compile Include="src\Block Entity\BEScrewPress.cs" />
+<Compile Include="src\Block Entity Behavior\BlockEntityBehaviorVector.cs" />
+<Compile Include="src\Entity\EntityPoisonedProjectile.cs" />
+<Compile Include="src\Gui\GuiDialogConditions.cs" />
+<Compile Include="src\Item\ItemDrug.cs" />
+<Compile Include="src\Item\ItemEnhancedArrow.cs" />
+<Compile Include="src\Item\ItemEnhancedBow.cs" />
+<Compile Include="src\Item\ItemEnhancedSpear.cs" />
+<Compile Include="src\Item\ItemEnhancedWeapon.cs" />
+<Compile Include="src\Item\ItemFirstAid.cs" />
+<Compile Include="src\Task\AiTaskTweakedMeleeAttack.cs" />
+
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+copy "$(TargetPath)" "$(ProjectDir)" 
+copy "$(TargetDir)\$(TargetName).pdb" "$(ProjectDir)" 
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

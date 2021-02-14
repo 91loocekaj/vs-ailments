@@ -1,0 +1,64 @@
+{
+  "pierce" : [{
+    "name" : "laceration",
+    "type" : "injury",
+    "chance" : 0.1,
+    "level" : 1,
+    "duration" : 1,
+    "effects": [{"name": "health-", "level" : 1, "start": 0, "end" : 24}, {"name": "bleed", "level" : 1, "start": 0, "end" : 24}],
+    "nextCond" : {
+      "name" : "infectedwound",
+      "type" : "bacterial",
+      "level" : 1,
+      "duration" : 1,
+      "effects" : [{"name": "health-", "level" : 1, "start": 0, "end" : 72}, {"name": "poison", "level" : 1, "start": 0, "end" : 72}]
+    }
+  }],
+  "fall" : [{
+    "name" : "brokenleg",
+    "type" : "injury",
+    "level" : 1,
+    "duration" :1,
+    "effects" : [{"name" : "speed-", "level" : 3, "start" : 0, "end" : 96}]
+  }],
+  "burn" : [{
+    "name" : "burn",
+    "type" : "injury",
+    "chance" : 0.1,
+    "level" : 1,
+    "duration" : 1,
+    "effects" : [{"name" : "health-", "level" : 2, "start" : 0, "end" : 432}]
+  }],
+  "blunt" : [{
+    "name" : "fracture",
+    "level" : 1,
+    "duration" : 1,
+    "chance" : 0.1,
+    "type" : "injury",
+    "effects" : [{"name": "speed-", "level" : 1, "start" : 0, "end" : 96}]
+  },
+  {
+    "name" : "concussion",
+    "level" : 1,
+    "duration" : 1,
+    "chance" : 0.1,
+    "type" : "injury",
+    "effects" : [{"name": "punch-", "level" : 1, "start" : 0, "end" : 96}]
+  }],
+  "slash" : [{
+    "name" : "abrasion",
+    "level" : 1,
+    "duration" : 1,
+    "chance" : 0.1,
+    "type" : "injury",
+    "effects" : [{"name": "defense-", "level" : 1, "start" : 0, "end" : 24}],
+    "nextCond" : {
+      "name" : "infectedwound",
+      "type" : "bacterial",
+      "level" : 1,
+      "duration" :1,
+      "effects" : [{"name": "health-", "level" : 1, "start": 0, "end" : 72}, {"name": "poison", "level" : 1, "start": 0, "end" : 72}]
+    },
+    "nextCondChance" : 0.1
+  }]
+}

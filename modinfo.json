@@ -1,0 +1,13 @@
+{
+  "type": "code",
+  "modid": "ailments",
+  "name": "Drugs & Diseases",
+  "author": "jakecool19",
+  "description": "Adds diseases and status effects",
+  "version": "0.2",
+  "dependency": {
+    "game": "",
+    "wildfarming" : "0.55",
+    "farmlife": "0.9.2"
+  }
+}

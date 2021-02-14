@@ -1,0 +1,54 @@
+{
+	code: "screwpress",
+	creativeinventory: {
+		"general": ["*"]
+	},
+	class: "BlockScrewPress",
+	entityclass: "BEScrewPress",
+	drawtype: "JSON",
+	replaceable: 5000,
+	attributes: {},
+	blockmaterial: "Ceramic",
+	shape: {
+		base: "block/screwpress"
+	},
+	renderpass: "OpaqueNoCull",
+	lightAbsorption: 0,
+	sideopaque: {
+		all: false
+	},
+	collisionbox: { x1: 0, y1: 0, z1: 0, x2: 1, y2: 0.9375, z2: 1 },
+	selectionBox: { x1: 0, y1: 0, z1: 0, x2: 1, y2: 0.9375, z2: 1 },
+	sidesolid: {
+		all: false
+	},
+	texture: {},
+	resistance: 0.5,
+	guiTransform: {
+	rotation: { x: -22.6, y: -125, z: 0 },
+	origin: { x: 0.5, y: 0.4, z: 0.5 },
+	scale: 1.19
+},
+	groundTransform: {
+		scale: 3
+	},
+	fpHandTransform: {
+		translation: {
+			x: 0,
+			y: 0,
+			z: 0.5
+		},
+		origin: {
+			x: 0.5,
+			y: 0,
+			z: 0.5
+		},
+		scale: 2
+	},
+	tpHandTransform: {
+	translation: { x: -0.71, y: -0.04, z: -1.22 },
+	rotation: { x: 106, y: -11, z: -103 },
+	origin: { x: 0.5, y: 0.01, z: 0.5 },
+	scale: 0.64
+}
+}

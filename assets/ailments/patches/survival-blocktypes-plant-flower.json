@@ -1,0 +1,130 @@
+[
+  {
+    "op": "add",
+    "path": "/attributes/herbPropertiesByType",
+    "value": {
+      "*-catmint-*": [
+        {
+          "name" : "catmint",
+          "type" : "drug",
+          "level" : 1,
+          "combine" : true,
+          "duration" : 1,
+          "chance" : 1,
+          "effects" : [{"name": "metabolism-", "level": 1, "start": 6, "end": 6}, {"name": "resistance", "level": 1, "start": 11, "end": 1, "addInfo" : "viral"}]
+        }
+      ],
+      "*-forgetmenot-*": [
+        {
+          "name" : "forgetmenot",
+          "type" : "drug",
+          "level" : 1,
+          "combine" : true,
+          "duration" : 1,
+          "chance" : 1,
+          "effects" : [{"name": "coag+", "level": 2, "start": 6, "end": 6}, {"name": "tolerate-", "level": 2, "start": 6, "end": 6}, {"name": "resistance", "level": 1, "start": 11, "end": 1, "addInfo" : "viral"}]
+        }
+      ],
+      "*-lilyofthevalley-*": [
+        {
+          "name" : "lilyofthevalley",
+          "type" : "drug",
+          "level" : 1,
+          "combine" : true,
+          "duration" : 1,
+          "chance" : 1,
+          "effects" : [{"name": "posion", "level": 1, "start": 2, "end": 10}, {"name": "resistance", "level": 1, "start": 11, "end": 1, "addInfo" : "parasitic"}]
+        }
+      ],
+      "*-edelweiss-*": [
+        {
+          "name" : "edelweiss",
+          "type" : "drug",
+          "level" : 1,
+          "combine" : true,
+          "duration" : 1,
+          "chance" : 1,
+          "effects" : [{"name": "speed+", "level": 1, "start": 6, "end": 6}, {"name": "resistance", "level": 1, "start": 11, "end": 1, "addInfo" : "bacterial"}]
+        }
+      ],
+      "*-heather-*": [
+        {
+          "name" : "heather",
+          "type" : "drug",
+          "level" : 1,
+          "combine" : true,
+          "duration" : 1,
+          "chance" : 1,
+          "effects" : [{"name": "tolerate-", "level": 1, "start": 1, "end": 11}, {"name": "resistance", "level": 1, "start": 11, "end": 1, "addInfo" : "parasitic"}]
+        }
+      ],
+      "*-horsetail-*": [
+        {
+          "name" : "horsetail",
+          "type" : "drug",
+          "level" : 1,
+          "combine" : true,
+          "duration" : 1,
+          "chance" : 1,
+          "effects" : [{"name": "tolerate+", "level": 1, "start": 6, "end": 6}, {"name": "regen", "level": 1, "start": 6, "end": 6}, {"name": "resistance", "level": 1, "start": 11, "end": 1, "addInfo" : "parasitic"}]
+        }
+      ],
+      "*-orangemallow-*": [
+        {
+          "name" : "orangemallow",
+          "type" : "drug",
+          "level" : 1,
+          "combine" : true,
+          "duration" : 1,
+          "chance" : 1,
+          "effects" : [{"name": "spread-", "level": 1, "start": 2, "end": 10}, {"name": "resistance", "level": 1, "start": 11, "end": 1, "addInfo" : "bacterial"}]
+        }
+      ],
+      "*-wilddaisy-*": [
+        {
+          "name" : "wilddaisy",
+          "type" : "drug",
+          "level" : 1,
+          "combine" : true,
+          "duration" : 1,
+          "chance" : 1,
+          "effects" : [{"name": "coag+", "level": 1, "start": 3, "end": 9}, {"name": "resistance", "level": 1, "start": 11, "end": 1, "addInfo" : "viral"}]
+        }
+      ],
+      "*-westerngorse-*": [
+        {
+          "name" : "westerngorse",
+          "type" : "drug",
+          "level" : 1,
+          "combine" : true,
+          "duration" : 1,
+          "chance" : 1,
+          "effects" : [{"name": "tolerate-", "level": 1, "start": 1, "end": 11}, {"name": "resistance", "level": 1, "start": 11, "end": 1, "addInfo" : "parasitic"}]
+        }
+      ],
+      "*-cowparsley-*": [
+        {
+          "name" : "cowparsley",
+          "type" : "drug",
+          "level" : 1,
+          "combine" : true,
+          "duration" : 1,
+          "chance" : 1,
+          "effects" : [{"name": "digest+", "level": 1, "start": 6, "end": 6}, {"name": "resistance", "level": 1, "start": 11, "end": 1, "addInfo" : "bacterial"}]
+        }
+      ],
+      "*-californiapoppy-*": [
+        {
+          "name" : "californiapoppy",
+          "type" : "drug",
+          "level" : 1,
+          "combine" : true,
+          "duration" : 1,
+          "chance" : 1,
+          "effects" : [{"name": "speed-", "level": 1, "start": 9, "end": 3}, {"name": "resistance", "level": 1, "start": 11, "end": 1, "addInfo" : "viral"}]
+        }
+      ]
+    },
+    "file": "game:blocktypes/plant/flower.json"
+  }
+]

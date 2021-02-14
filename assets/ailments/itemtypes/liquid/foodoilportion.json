@@ -1,0 +1,32 @@
+{
+	code: "foodoilportion",
+	class: "ItemLiquidPortion",
+	matterState: "liquid",
+	attributes: {
+		nutritionPropsWhenInMeal: { satiety: 80, foodcategory: "Protein" },
+		waterTightContainerProps: {
+			containable: true,
+			itemsPerLitre: 4,
+			texture: { base: "game:block/liquid/foodoil" },
+			allowSpill: true,
+			whenSpilled: {
+				action: "DropContents",
+				stack: { type: "item", code: "ailments:foodoilportion" }
+			}
+		}
+	},
+	shape: { base: "game:item/liquid" },
+	texture: { base: "game:block/liquid/foodoil" },
+	creativeinventory: { "general": ["*"], "items": ["*"] },
+	maxstacksize: 16,
+	materialDensity: 200,
+	guiTransform: {
+		rotation: { x: 128, y: 40, z: 7 },
+		origin: { x: 0.5, y: 0, z: 0.5 },
+		scale: 1.4
+	},
+	fpHandTransform: {
+		translation: { x: 0, y: 0, z: 0 },
+		rotation: { x: 42, y: 129, z: -30 }
+	}
+}

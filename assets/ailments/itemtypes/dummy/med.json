@@ -1,0 +1,109 @@
+{
+	code: "med",
+	maxstacksize: 1,
+	attributesByType: {
+  "*-tea-*" : {
+		maxUses: 1
+	},
+	"*-oil-*" : {
+		maxUses: 7
+	},
+	"*-tincture-*" : {
+		maxUses: 10
+	},
+	"*-cream-*" : {
+		maxUses: 7
+	},
+	"*-oxymel-*" : {
+		maxUses: 5
+	},
+	"*-elixir-*" : {
+		maxUses: 10
+	},
+	"*-vinegar-*" : {
+		maxUses: 5
+	},
+	},
+	variantgroups: [
+		{ code: "type", states:["tea","oil", "tincture", "cream", "oxymel", "elixir", "vinegar", "dummy"] },
+		{ code: "state", states:["ready", "unready"] },
+	],
+
+	materialDensity: 300,
+	transitionablePropsByType: {
+		"med-dummy-*":
+		[{
+			type: "Perish",
+			freshHours: { avg: 999999 },
+			transitionHours: { avg: 999999 },
+			transitionedStack: { type: "item", code: "game:rot" },
+			transitionRatio: 1
+		}],
+		"med-oil-unready":
+			[{
+				type: "Cure",
+				freshHours: { avg: 0 },
+				transitionHours: { avg: 216 },
+				transitionedStack: { type: "item", code: "ailments:med-oil-ready" },
+				transitionRatio: 1
+			}],
+		"med-oil-ready":
+		[{
+			type: "Perish",
+			freshHours: { avg: 384 },
+			transitionHours: { avg: 48 },
+			transitionedStack: { type: "item", code: "game:rot" },
+			transitionRatio: 1
+		}],
+		"med-tincture-unready":
+			[{
+				type: "Cure",
+				freshHours: { avg: 0 },
+				transitionHours: { avg: 216 },
+				transitionedStack: { type: "item", code: "ailments:med-tincture-ready" },
+				transitionRatio: 1
+			}],
+		"med-tincture-ready":
+		[{
+			type: "Perish",
+			freshHours: { avg: 2160 },
+			transitionHours: { avg: 48 },
+			transitionedStack: { type: "item", code: "game:rot" },
+			transitionRatio: 1
+		}],
+		"med-tea-ready":
+		[{
+			type: "Perish",
+			freshHours: { avg: 72 },
+			transitionHours: { avg: 24 },
+			transitionedStack: { type: "item", code: "game:rot" },
+			transitionRatio: 1
+		}],
+		"med-elixir-unready":
+			[{
+				type: "Cure",
+				freshHours: { avg: 0 },
+				transitionHours: { avg: 216 },
+				transitionedStack: { type: "item", code: "ailments:med-tincture-ready" },
+				transitionRatio: 1
+			}],
+		"med-elixir-ready":
+		[{
+			type: "Perish",
+			freshHours: { avg: 2160 },
+			transitionHours: { avg: 48 },
+			transitionedStack: { type: "item", code: "game:rot" },
+			transitionRatio: 1
+		}]
+	},
+	combustiblePropsByType:{
+		"med-tea-unready" : {
+			meltingPoint: 200,
+			meltingDuration: 15,
+			smeltedRatio: 1,
+			smeltingType: "bake",
+			smeltedStack: { type: "item", code: "ailments:med-tea-ready" },
+			requiresContainer: true
+		}
+	}
+}

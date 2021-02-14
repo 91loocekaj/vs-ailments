@@ -1,0 +1,118 @@
+[
+  {
+  	ingredientPattern: "PR_",
+  	ingredients: {
+  		"P": { type: "block", code: "ailments:bottle-cream", returnedStack: { type: "block", code: "bottle-burned" }},
+      "R" : { type: "block", code: "game:flower-*", allowedVariants : ["catmint-free", "californiapoppy-free"] }
+  	},
+  	name: "tranquilizer",
+  	width: 3,
+  	height: 1,
+    shapeless: true,
+  	output: { type: "item", code: "ailments:arrowpoison-tranquilizer", quantity: 6 }
+  },
+  {
+  	ingredientPattern: "PIR",
+  	ingredients: {
+  		"P": { type: "block", code: "ailments:bottle-cream", returnedStack: { type: "block", code: "bottle-burned" }},
+      "R" : { type: "item", code: "game:rot" },
+  		"I": { type: "item", code: "game:herbbundle-chamomile" }
+  	},
+  	name: "weakener",
+  	width: 3,
+  	height: 1,
+    shapeless: true,
+  	output: { type: "item", code: "ailments:arrowpoison-weakener", quantity: 6   }
+  },
+  {
+  	ingredientPattern: "PR_",
+  	ingredients: {
+  		"P": { type: "block", code: "ailments:bottle-cream", returnedStack: { type: "block", code: "bottle-burned" }},
+      "R" : { type: "block", code: "game:flower-lupine-*" }
+  	},
+  	name: "confusion",
+  	width: 3,
+  	height: 1,
+    shapeless: true,
+  	output: { type: "item", code: "ailments:arrowpoison-confusion", quantity: 6   }
+  },
+  {
+  	ingredientPattern: "PIR",
+  	ingredients: {
+  		"P": { type: "block", code: "ailments:bottle-cream", returnedStack: { type: "block", code: "bottle-burned" }},
+      "R" : { type: "block", code: "game:mushroom-flyagaric-*" },
+  		"I": { type: "block", code: "game:flower-lilyofthevalley-*" }
+  	},
+  	name: "killer",
+  	width: 3,
+  	height: 1,
+    shapeless: true,
+  	output: { type: "item", code: "ailments:arrowpoison-killer", quantity: 6   }
+  },
+
+
+  {
+  	ingredientPattern: "PRI",
+  	ingredients: {
+  		"P": { type: "block", code: "ailments:bottle-cream", returnedStack: { type: "block", code: "bottle-burned" }},
+      "I": { type: "item", code: "game:hammer-*", isTool: true  },
+      "R" : { type: "item", code: "game:charcoal" }
+  	},
+  	name: "mechtranquilizer",
+  	width: 3,
+  	height: 1,
+    shapeless: true,
+  	output: { type: "item", code: "ailments:arrowpoison-mech-tranquilizer", quantity: 6 }
+  },
+  {
+  	ingredientPattern: "PIR",
+  	ingredients: {
+  		"P": { type: "block", code: "ailments:bottle-cream", returnedStack: { type: "block", code: "bottle-burned" }},
+      "R" : {	type: "block", code: "game:woodbucket" },
+  		"I": { type: "item", code: "game:salt" }
+  	},
+    attributes: {
+  		liquidContainerProps: {
+  			requiresContent: { type: "item", code: "waterportion" },
+  			requiresQuantity: 1
+  		}
+  	},
+  	name: "mechweakener",
+  	width: 3,
+  	height: 1,
+    shapeless: true,
+  	output: { type: "item", code: "ailments:arrowpoison-mech-weakener", quantity: 6   }
+  },
+  {
+  	ingredientPattern: "PRI",
+  	ingredients: {
+  		"P": { type: "block", code: "ailments:bottle-cream", returnedStack: { type: "block", code: "bottle-burned" }},
+      "R" : {	type: "block", code: "game:woodbucket" },
+      "I" : { type: "item", code: "game:ore-sulfur" }
+  	},
+    attributes: {
+  		liquidContainerProps: {
+  			requiresContent: { type: "item", code: "waterportion" },
+  			requiresQuantity: 1
+  		}
+  	},
+  	name: "mechconfusion",
+  	width: 3,
+  	height: 1,
+    shapeless: true,
+  	output: { type: "item", code: "ailments:arrowpoison-mech-confusion", quantity: 6   }
+  },
+  {
+  	ingredientPattern: "PIR",
+  	ingredients: {
+  		"P": { type: "block", code: "ailments:bottle-cream", returnedStack: { type: "block", code: "bottle-burned" }},
+      "R" : { type: "item", code: "game:hammer-*", isTool: true  },
+  		"I": { type: "item", code: "game:nugget-magnetite" }
+  	},
+  	name: "mechkiller",
+  	width: 3,
+  	height: 1,
+    shapeless: true,
+  	output: { type: "item", code: "ailments:arrowpoison-mech-killer", quantity: 6   }
+  },
+]

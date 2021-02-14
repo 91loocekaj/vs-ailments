@@ -1,0 +1,15 @@
+{
+	code: "malt",
+	attributes: {},
+	texture: { base: "ailments:item/fermentation/malt" },
+	creativeinventory: { "general": ["*"], "items": ["*"] },
+	maxstacksize: 64,
+	materialDensity: 200,
+  transitionableProps: [{
+    type: "Perish",
+    freshHours: { avg: 240 },
+    transitionHours: { avg: 72 },
+    transitionedStack: { type: "item", code: "game:rot" },
+    transitionRatio: 1
+  }],
+}

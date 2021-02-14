@@ -1,0 +1,39 @@
+{
+	code: "wineportion",
+	class: "ItemLiquidPortion",
+	matterState: "liquid",
+	attributes: {
+		nutritionPropsWhenInMeal: { satiety: 80, foodcategory: "Fruit" },
+		waterTightContainerProps: {
+			containable: true,
+			itemsPerLitre: 4,
+			texture: { base: "game:block/liquid/wine" },
+			allowSpill: true,
+			whenSpilled: {
+				action: "DropContents",
+				stack: { type: "item", code: "ailments:wineportion" }
+			}
+		}
+	},
+	transitionableProps: [{
+    type: "Perish",
+    freshHours: { avg: 240 },
+    transitionHours: { avg: 12 },
+    transitionedStack: { type: "item", code: "ailments:vinegarportion" },
+    transitionRatio: 1
+  }],
+	shape: { base: "game:item/liquid" },
+	texture: { base: "game:block/liquid/wine" },
+	creativeinventory: { "general": ["*"], "items": ["*"] },
+	maxstacksize: 100,
+	materialDensity: 200,
+	guiTransform: {
+		rotation: { x: 128, y: 40, z: 7 },
+		origin: { x: 0.5, y: 0, z: 0.5 },
+		scale: 1.4
+	},
+	fpHandTransform: {
+		translation: { x: 0, y: 0, z: 0 },
+		rotation: { x: 42, y: 129, z: -30 }
+	}
+}

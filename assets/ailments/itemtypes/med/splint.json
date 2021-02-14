@@ -1,0 +1,14 @@
+{
+	code: "splint",
+	class: "ItemFirstAid",
+	attributes: {
+    health: 1,
+		"firstAidRemoval" : ["fracture", "brokenleg"],
+	},
+	maxstacksize: 16,
+	textures: {
+		"all": { base: "item/med/splint" },
+	},
+	creativeinventory: { "general": ["*"], "items": ["*"] },
+	materialDensity: 600,
+}

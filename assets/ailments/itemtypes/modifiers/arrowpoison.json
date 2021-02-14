@@ -1,0 +1,60 @@
+{
+	code: "arrowpoison",
+	variantgroups: [
+	{ code: "type", states: ["tranquilizer", "weakener", "confusion", "killer"]}
+],
+	attributesByType: {
+		"*-tranquilizer": {
+			poisonName: "tranquilizer",
+			arrowPoison: [{
+				name: "tranquilizer",
+				type: "poison",
+				level: 1,
+				duration: 1,
+				effects: [{name: "speed-", level: 2, start: 0, end: 1}]
+				}]
+		},
+		"*-weakener": {
+			poisonName: "weakener",
+			arrowPoison: [{
+				name: "weakener",
+				type: "poison",
+				level: 1,
+				duration: 1,
+				effects: [{name: "defense-", level: 1, start: 0, end: 1}]
+				}]
+		},
+		"*-confusion": {
+			poisonName: "confusion",
+			arrowPoison: [{
+				name: "confusion",
+				type: "poison",
+				level: 1,
+				duration: 1,
+				effects: [{name: "punch-", level: 1, start: 0, end: 1}, {name: "throw-", level: 1, start: 0, end: 1}]
+				}]
+		},
+		"*-killer": {
+			poisonName: "killer",
+			arrowPoison: [{
+				name: "killer",
+				type: "poison",
+				combine : true,
+				level: 1,
+				duration: 1,
+				effects: [{name: "poison", level: 18, start: 1, end: 1}]
+				}]
+		},
+	},
+	texture: { base: "ailments:item/poisonbottle-{type}" },
+	creativeinventory: { "general": ["*"], "items": ["*"] },
+	maxstacksize: 64,
+	materialDensity: 200,
+	guiTransform: {
+	translation: { x: 3, y: 11, z: 0 },
+	scale: 1.51
+},
+fpHandTransform: {
+	translation: { x: 0.05, y: -0.2, z: 0 }
+},
+}
