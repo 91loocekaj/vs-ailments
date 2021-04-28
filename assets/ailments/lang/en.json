@@ -9,8 +9,8 @@
 "item-med-cream-*" : "Cream of ",
 "item-aleportion" : "Ale Portion (0.25L)",
 "item-distilledalcoholportion" : "Distilled Alcohol Portion (0.25L)",
-"item-foodoilportion" : "Food Oil Portion (0.25L)",
-"item-fruitjuiceportion" : "Fruit Juice Portion (0.25L)",
+
+
 "item-mashportion" : "Mash Portion (1.0L)",
 "item-vinegarportion" : "Vinegar Portion (0.25L)",
 "item-wineportion" : "Wine Portion (0.25L)",
@@ -73,15 +73,10 @@
 "block-alembic-raw" : "Raw Alembic",
 "block-alembic-burned" : "Alembic",
 "block-alembic-filled" : "Filled Alembic",
-"block-screwpress" : "Wooden Screw Press",
+
 
 "heldhelp-usemedicine" : "Take Medicine",
 "heldhelp-applymedicine" : "Apply medicine to creature",
-
-"blockhelp-screwpress-rightclick" : "Add item",
-"blockhelp-screwpress-shiftrightclick" : "Add item x5",
-"blockhelp-screwpress-liquid" : "Remove liquid",
-"blockhelp-screwpress-crush" : "Crush contents",
 
 "herbName-herbbundle-basil" : "Basil",
 "herbName-herbbundle-chamomile" : "Chamomile",

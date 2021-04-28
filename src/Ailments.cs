@@ -31,7 +31,7 @@ namespace Ailments
             api.RegisterBlockClass("BlockMedicineContainer", typeof(BlockMedicineContainer));
             api.RegisterBlockClass("BlockDistillingContainer", typeof(BlockDistillingContainer));
             api.RegisterBlockClass("BlockDistilledContainer", typeof(BlockDistilledContainer));
-            api.RegisterBlockClass("BlockScrewPress", typeof(BlockScrewPress));
+            
 
             api.RegisterBlockBehaviorClass("Dirty", typeof(BlockBehaviorDirty));
             api.RegisterBlockBehaviorClass("TemporalHarvest", typeof(BlockBehaviorTemporalHarvestable));
@@ -40,8 +40,7 @@ namespace Ailments
 
             api.RegisterBlockEntityClass("BEMedicineContainer", typeof(BEMedicineContainer));
             api.RegisterBlockEntityClass("BEDistilledContainer", typeof(BEDistilledContainer));
-            api.RegisterBlockEntityClass("BEScrewPress", typeof(BEScrewPress));
-
+            
 
             api.RegisterEntityBehaviorClass("condscontroller", typeof(EntityBehaviorCondsController));
             api.RegisterEntityBehaviorClass("condsviewer", typeof(EntityBehaviorCondsViewer));
